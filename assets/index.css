@@ -49,7 +49,7 @@ nav img {
 
 nav {
   /* position: fixed; */
-  height: 80px;
+  height: 40px;
   width: 100%;
 }
 
@@ -66,7 +66,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: black;
+  color: grey;
   margin-left: 25px;
   text-transform: uppercase;
   font-size: 16px;
@@ -88,11 +88,15 @@ nav svg {
   transition: all 2s;
 }
 
+.section1 {
+  height: 100vh;
+}
+
 #standat,
 #ease {
   font-family: 'OpenSansExtraBold', sans-serif;
   font-weight: 800;
-  font-size: 96px;
+  font-size: 80px;
   display: inline-block;
   position: relative;
   top: 120px;
@@ -114,7 +118,7 @@ nav svg {
   margin-left: 70px;
   font-family: 'OpenSansLight', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   transition: all 1s;
   padding-right: 30px;
 }
@@ -138,17 +142,221 @@ button {
   margin-top: 400px;
 }
 
-/* .container {
+.container {
+  width: 100%;
+  height: 100%;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 100vh;
-  scroll-behavior: smooth;
 }
 
-section {
-  height: 100vh;
+.section1,
+.section2,
+.section3,
+.section4 {
   scroll-snap-align: start;
-} */
+}
+
+.section2 {
+  background: white;
+}
+
+.section3,
+.section4 {
+  background: black;
+}
+
+/* first attempt for scrollbar */
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#scrollPath {
+  z-index: 3;
+  position: fixed;
+  top: 82px;
+  right: 20px;
+  width: 10px;
+  height: 85%;
+  background: rgba(0, 0, 0, 0.09);
+  border-radius: 4px;
+}
+
+#progressBar {
+  z-index: 3;
+  position: fixed;
+  top: 82px;
+  right: 20px;
+  width: 10px;
+  height: 85%;
+  border-radius: 4px;
+  background: linear-gradient(to top, red, white);
+}
+
+#progressBar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  background: linear-gradient(to top, red, white);
+}
+
+#progressBar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  background: linear-gradient(to top, red, white);
+}
+
+.section2,
+.section3,
+.section4 {
+  position: relative;
+  height: 100vh;
+}
+
+.line {
+  background-color: #df0000;
+  height: 2.7px;
+  width: 50.6%;
+}
+
+.section2 > h2,
+.section3 > h2,
+.section4 > h2 {
+  position: absolute;
+  top: 20px;
+  left: 72px;
+  font-size: 40px;
+}
+
+.section3 > h2,
+.section4 > h2 {
+  color: white;
+}
+
+iframe {
+  border-radius: 16px;
+  margin-top: 100px;
+}
+
+.section2 section img {
+  width: 320px;
+}
+
+.section2 > .line,
+.section3 > .line,
+.section4 > .line {
+  position: absolute;
+  top: 74px;
+}
+
+.inner-container {
+  display: flex;
+  position: absolute;
+  top: 120px;
+  align-items: center;
+  left: 80px;
+}
+
+.inner-section-problem {
+  margin-top: 120px;
+  line-height: 2.2;
+  margin-right: 40px;
+}
+
+.inner-section-statement {
+  margin-top: 80px;
+  line-height: 3;
+  color: white;
+  margin-right: 80px;
+}
+
+.inner-section-goal {
+  margin-bottom: 200px;
+  line-height: 2.2;
+  margin-left: 60px;
+}
+
+.section4 {
+  color: white;
+}
+
+.grid-container,
+.grid-container2 {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  display: grid;
+  background-color: aqua;
+  grid-template-columns: 720px 720px;
+}
+
+.grid-container2 {
+  top: 10px;
+}
+
+.grid-container img,
+.grid-container2 img {
+  margin-left: 250px;
+  margin-top: 50px;
+}
+
+.grid-item-1 {
+  background-color: white;
+  height: 320px;
+}
+
+.grid-item-2 h2 {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.grid-item-2 p {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.grid-item-2 {
+  background-color: black;
+  height: 320px;
+}
+
+.grid-item-3 {
+  background-color: #c83e3e;
+  height: 320px;
+  text-align: center;
+}
+.grid-item-3 p {
+  margin-top: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grid-item-4 {
+  background-color: white;
+  height: 320px;
+}
+
+.grid-container2 > .grid-item-1,
+.grid-container2 > .grid-item-2,
+.grid-container2 > .grid-item-3,
+.grid-container2 > .grid-item-4 {
+  height: 260px;
+}
+
+.grid-container2 > .grid-item-2 > h2 {
+  margin-top: 80px;
+}
+
+.grid-container2 > .grid-item-3 > p {
+  margin-top: 120px;
+}
 
 @media (max-width: 908px) {
   nav img {
