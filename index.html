@@ -38,7 +38,10 @@
       </nav>
     </header>
     <main class="container">
-      <section>
+      <div id="progressBar"></div>
+      <div id="scrollPath"></div>
+
+      <section class="section1">
         <!-- class="h_background" -->
         <h1 id="standat">STAND AT</h1>
         <br id="standatease" />
@@ -50,6 +53,205 @@
         </p>
         <button>Order Now</button>
       </section>
+
+      <section class="section2">
+        <h2>Why Stand At Ease?</h2>
+        <div class="line"></div>
+        <section class="inner-container">
+          <section class="inner-section-problem">
+            <h2>Problem</h2>
+            <ul>
+              <li>Difficulty during sitting and rising from a chair.</li>
+              <li>Inability to bear excessive loads on the knees and hip.</li>
+              <li>
+                Muscle and joint pain increases with time due to unassisted
+                seating.
+              </li>
+            </ul>
+          </section>
+
+          <section class="image-section">
+            <img
+              src="./assets/images/problem_goal.png"
+              alt="Problem and Goal"
+            />
+          </section>
+
+          <section class="inner-section-goal">
+            <h2>Goal</h2>
+            <ul>
+              <li>Gradual assistance while rising from the chair.</li>
+              <li>Resistive support to the occupant while sitting.</li>
+            </ul>
+          </section>
+        </section>
+      </section>
+
+      <section class="section3">
+        <h2>Problem Statement</h2>
+        <div class="line"></div>
+        <section class="inner-container">
+          <section class="inner-section-statement">
+            <ul>
+              <li>Initial Testing with sEMG sensors on normal chair.</li>
+              <li>
+                High thigh muscle activation observed while using normal chair
+                doing stand-to-sit <br />
+                and sit-to-stand actions.
+              </li>
+            </ul>
+          </section>
+
+          <section class="inner-section-video">
+            <iframe
+              width="660"
+              height="315"
+              src="https://www.youtube.com/embed/WuFpR6bOink"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
+        </section>
+      </section>
+
+      <section class="section2">
+        <h2>Solution / Product Innovation</h2>
+        <div class="line"></div>
+        <section class="inner-container">
+          <section class="image-section" style="margin-left: 100px">
+            <img
+              src="./assets/images/problem_goal.png"
+              alt="Problem and Goal"
+            />
+          </section>
+
+          <section class="inner-section-goal">
+            <!-- <h2>Goal</h2> -->
+            <ul style="margin-left: 100px">
+              <li>
+                Geriatricians interactions and user insights led us to design
+                our chair.
+              </li>
+              <li>
+                Stand At Ease chair with patented Compliant Hinge Mechanism.
+              </li>
+            </ul>
+          </section>
+        </section>
+      </section>
+
+      <section class="section4">
+        <h2>Why Stand at Ease Works?</h2>
+        <div class="line"></div>
+        <div class="grid-container">
+          <div class="grid-item grid-item-1">
+            <img src="./assets//images/clipart_1.png" alt="" width="200" />
+          </div>
+          <div class="grid-item grid-item-2">
+            <h2>Stand To Sit</h2>
+            <p>
+              The sharp rise at the beginning gives a great support and slows
+              down towards the end as the user is sitting.
+            </p>
+          </div>
+          <div class="grid-item grid-item-3">
+            <p>
+              By this mechanism the user is not applying tension on their knees
+              while sitting.
+            </p>
+          </div>
+          <div class="grid-item grid-item-4">
+            <img src="./assets/images/clipart_2.png" alt="" width="300" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section4" style="background-color: white">
+        <div class="grid-container2">
+          <div class="grid-item grid-item-1">
+            <img src="./assets//images/clipart_3.png" alt="" width="240" />
+          </div>
+          <div class="grid-item grid-item-2">
+            <h2>Sit To Stand</h2>
+            <p>
+              While standing the seat pushes the user, thus offloading the arms
+              and reducing muscle activation.
+            </p>
+          </div>
+          <div class="grid-item grid-item-3">
+            <p>
+              The seat and mechanism provide resistance to sudden drop thus
+              protecting hips and reducing thigh muscle activation.
+            </p>
+          </div>
+          <div class="grid-item grid-item-4">
+            <img src="./assets/images/clipart_4.png" alt="" width="200" />
+          </div>
+        </div>
+        <div
+          style="
+            height: 300px;
+            position: absolute;
+            top: 540px;
+            left: 80px;
+            display: flex;
+          "
+        >
+          <div>
+            <img
+              src="./assets/images/translead_logo.png"
+              alt=""
+              width="100"
+              style="margin-top: 20px"
+            />
+          </div>
+          <div>
+            <h2
+              style="
+                color: red;
+                font-size: 20px;
+                margin-left: 30px;
+                margin-top: 20px;
+              "
+            >
+              Address
+            </h2>
+            <p style="color: black; margin-left: 30px">
+              Translead Medtech Pvt Ltd,Incubated @ CPDMED TBI, MedTech &
+              Geriatric Healthcare Technology Business Incubator <br />
+              @ Centre for Product Design & Manufacturing (CPDM), Raman
+              Building, Indian Institute of Science (IISc), Bangalore-560012
+            </p>
+          </div>
+          <div>
+            <h2
+              style="
+                color: red;
+                font-size: 20px;
+                margin-left: 30px;
+                margin-top: 20px;
+              "
+            >
+              Contacts
+            </h2>
+            <p style="color: black; margin-left: 30px">
+              Email: info@transleadmedtech.com <br />
+              Phone: +91-86181 13553
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script type="text/javascript">
+      let progess = document.getElementById('progressBar');
+      let totalHeight = document.body.scrollHeight - window.innerHeight;
+      window.onscroll = function () {
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + '%';
+      };
+    </script>
   </body>
 </html>
