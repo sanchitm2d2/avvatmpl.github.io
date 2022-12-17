@@ -48,7 +48,6 @@ nav {
 nav ul {
   float: right;
   margin-right: 20px;
-  transition: all 0.5s;
 }
 
 nav ul li {
@@ -67,7 +66,6 @@ nav ul li a {
 a.active,
 a:hover {
   color: red;
-  transition: 0.5s;
 }
 
 nav svg {
@@ -77,7 +75,64 @@ nav svg {
   cursor: pointer;
   display: none;
   margin-right: 2%;
-  transition: all 2s;
+}
+
+footer {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+
+footer h2 {
+  color: red;
+  margin-bottom: 6px;
+}
+
+.section2 > h2 {
+  font-size: 40px;
+  font-family: 'OpenSans';
+  position: absolute;
+  top: 30px;
+  left: 70px;
+}
+
+.line {
+  background-color: #df0000;
+  height: 2.7px;
+  width: 54.6%;
+}
+
+.section2 {
+  position: relative;
+  margin-top: 50px;
+  height: 90vh;
+}
+
+.section2 > .line {
+  position: absolute;
+  top: 94px;
+}
+
+.section2 {
+  background-color: black;
+  color: white;
+}
+
+.inner-container1,
+.inner-container2 {
+  display: flex;
+  justify-content: center;
+}
+
+.inner-container1 img {
+  margin-top: 160px;
+  margin-left: 30px;
+}
+.inner-container2 img {
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 @media (max-width: 908px) {
@@ -86,7 +141,6 @@ nav svg {
     display: inline-block;
     width: 100px;
     margin-left: 38%;
-    transition: all 2s;
   }
 
   nav svg {
@@ -101,7 +155,6 @@ nav svg {
     text-align: center;
     top: 80px;
     left: -100%;
-    transition: all 0.5s;
   }
 
   nav ul li {

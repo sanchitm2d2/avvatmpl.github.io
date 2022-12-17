@@ -110,12 +110,28 @@ mark {
   width: 150px;
   border-radius: 260px;
   margin-left: 32%;
+  position: relative;
+  top: 20px;
 }
 
 .boundary {
   border: 1px solid #000;
   border-radius: 15px;
   padding: 30px;
+}
+
+footer {
+  margin-top: 20px;
+  font-family: 'OpenSans';
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+
+footer h2 {
+  color: red;
+  margin-bottom: 6px;
 }
 
 @media (max-width: 908px) {
@@ -152,5 +168,14 @@ mark {
 
   .box {
     width: 80%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer img {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

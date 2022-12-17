@@ -33,10 +33,13 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 nav img {
   margin-top: 10px;
   margin-left: 70px;
-  transition: all 0.5s;
 }
 
 nav {
@@ -48,7 +51,6 @@ nav {
 nav ul {
   float: right;
   margin-right: 20px;
-  transition: all 0.5s;
 }
 
 nav ul li {
@@ -132,13 +134,25 @@ nav svg {
   margin-left: 150px;
 }
 
+footer {
+  font-family: 'OpenSans';
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+
+footer h2 {
+  color: red;
+  margin-bottom: 6px;
+}
+
 @media (max-width: 908px) {
   nav img {
     position: static;
     display: inline-block;
     width: 100px;
     margin-left: 38%;
-    transition: all 2s;
   }
 
   nav svg {
@@ -153,7 +167,6 @@ nav svg {
     text-align: center;
     top: 80px;
     left: -100%;
-    transition: all 0.5s;
   }
 
   nav ul li {
