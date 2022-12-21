@@ -74,7 +74,7 @@ nav ul li a {
 
 a.active,
 a:hover {
-  color: red;
+  color: #e20000;
   transition: 0.5s;
 }
 
@@ -105,7 +105,7 @@ nav svg {
 }
 
 #ease {
-  color: red;
+  color: #e20000;
   margin-left: 18px;
 }
 
@@ -190,7 +190,7 @@ button {
   width: 10px;
   height: 85%;
   border-radius: 4px;
-  background: linear-gradient(to top, red, white);
+  background: linear-gradient(to top, #e20000, white);
 }
 
 #progressBar:before {
@@ -200,7 +200,7 @@ button {
   left: 0;
   width: 100%;
   /* height: 100%; */
-  background: linear-gradient(to top, red, white);
+  background: linear-gradient(to top, #e20000, white);
 }
 
 #progressBar:after {
@@ -210,7 +210,7 @@ button {
   left: 0;
   width: 100%;
   /* height: 100%; */
-  background: linear-gradient(to top, red, white);
+  background: linear-gradient(to top, #e20000, white);
 }
 
 .section2,

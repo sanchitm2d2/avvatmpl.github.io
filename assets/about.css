@@ -65,7 +65,7 @@ nav ul li a {
 
 a.active,
 a:hover {
-  color: red;
+  color: #e20000;
 }
 
 nav svg {
@@ -86,8 +86,79 @@ footer {
 }
 
 footer h2 {
-  color: red;
+  color: #e20000;
   margin-bottom: 6px;
+}
+
+.advisory h1 {
+  margin-top: 80px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.advisory h2 {
+  font-family: 'OpenSans';
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: normal;
+}
+
+mark {
+  background: none;
+  color: #e20000;
+}
+
+.advisory-board {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  width: 32%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box img {
+  width: 150px;
+  border-radius: 260px;
+  margin-left: 32%;
+  position: relative;
+  top: 20px;
+  box-shadow: 2px 3px 10px #888888;
+}
+
+.boundary {
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.boundary h2 {
+  margin-top: 6px;
+  font-family: 'OpenSans';
+  font-weight: 600;
+  color: #e20000;
+}
+
+.boundary h3 {
+  margin-top: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.inner-boxes {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.inner-boxes p {
+  line-height: 2;
 }
 
 .section2 > h2 {
