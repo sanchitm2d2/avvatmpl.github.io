@@ -35,9 +35,6 @@
       </nav>
     </header>
     <main class="container">
-      <div id="progressBar"></div>
-      <div id="scrollPath"></div>
-
       <section class="section1">
         <!-- class="h_background" -->
         <h1 id="standat">STAND AT</h1>
@@ -243,14 +240,5 @@
         </div>
       </section>
     </main>
-
-    <script type="text/javascript">
-      let progess = document.getElementById('progressBar');
-      let totalHeight = document.body.scrollHeight - window.innerHeight;
-      window.onscroll = function () {
-        let progressHeight = (window.pageYOffset / totalHeight) * 100;
-        progress.style.height = progressHeight + '%';
-      };
-    </script>
   </body>
 </html>
