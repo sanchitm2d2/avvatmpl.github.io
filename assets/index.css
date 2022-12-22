@@ -176,9 +176,6 @@ main::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 8px;
 }
-main::-webkit-scrollbar-track {
-  border-radius: 8px;
-}
 
 main::-webkit-scrollbar-thumb {
   background-color: #eb2000;
