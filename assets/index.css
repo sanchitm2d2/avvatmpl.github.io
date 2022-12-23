@@ -154,6 +154,7 @@ button {
 .section3,
 .section4 {
   scroll-snap-align: start;
+  font-family: 'OpenSans';
 }
 
 .section2 {
@@ -228,15 +229,24 @@ iframe {
 .inner-container {
   display: flex;
   position: absolute;
+  top: 80px;
+  align-items: center;
+  left: 300px;
+}
+
+.inner-container2 {
+  display: flex;
+  position: absolute;
   top: 120px;
   align-items: center;
   left: 80px;
 }
 
 .inner-section-problem {
-  margin-top: 120px;
+  /* margin-top: 100px; */
   line-height: 2.2;
   margin-right: 40px;
+  text-align: right;
 }
 
 .inner-section-statement {
@@ -249,7 +259,9 @@ iframe {
 .inner-section-goal {
   margin-bottom: 200px;
   line-height: 2.2;
-  margin-left: 60px;
+  margin-left: 30px;
+  position: relative;
+  top: -120px;
 }
 
 .section4 {
