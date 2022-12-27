@@ -93,6 +93,10 @@ nav svg {
   justify-content: space-evenly;
 }
 
+.inner-div {
+  height: 380px;
+}
+
 button {
   width: 200px;
   height: 40px;
