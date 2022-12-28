@@ -110,15 +110,33 @@ nav svg {
 #standatease {
   display: none;
 }
-
-#standatease_para {
+#standatease_para1 {
   margin-top: 120px;
   margin-left: 70px;
   font-family: 'OpenSansLight', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  padding-right: 30px;
+  letter-spacing: 7px;
+}
+
+.line1 {
+  background-color: #df0000;
+  height: 2.7px;
+  width: 30.6%;
+  margin-top: 30px;
+  margin-left: 140px;
+}
+
+#standatease_para {
+  font-family: 'OpenSansLight', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  transition: all 1s;
-  padding-right: 30px;
+  margin-left: 70px;
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+  left: -410px;
 }
 
 button {
@@ -404,7 +422,6 @@ iframe {
     margin-left: 0px;
     top: 50px;
     font-size: 48px;
-    transition: all 0.5s;
   }
   #ease {
     margin-left: 9px;
@@ -413,7 +430,6 @@ iframe {
   #standatease_para {
     margin-top: 60px;
     margin-left: 62px;
-    transition: all 1s;
     font-size: 14px;
     text-align: center;
   }
