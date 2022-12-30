@@ -1,0 +1,339 @@
+@font-face {
+  src: url('./../fonts/OpenSans/OpenSansRegular400.ttf');
+  font-family: 'OpenSans';
+}
+
+@font-face {
+  src: url('./../fonts/OpenSans/OpenSansLight300.ttf');
+  font-family: 'OpenSansLight';
+}
+
+@font-face {
+  src: url('./../fonts/OpenSans/OpenSansBold700.ttf');
+  font-family: 'OpenSansBold';
+}
+
+@font-face {
+  src: url('./../fonts/OpenSans/OpenSansSemiBold600.ttf');
+  font-family: 'OpenSansSemiBold';
+}
+
+@font-face {
+  src: url('./../fonts/OpenSans/OpenSansExtraBold800.ttf');
+  font-family: 'OpenSansExtraBold';
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'OpenSans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primaryred: #e20000;
+  --secondaryred: #fb0000;
+  --grey: #0000009e;
+}
+
+mark {
+  background: none;
+  color: var(--secondaryred);
+  font-weight: 630;
+}
+
+/* ------------Navbar Styles------------ */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar img {
+  margin: 2rem 0 1.5rem 1.5rem;
+}
+
+.navbar-links {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  padding: 1rem;
+  display: block;
+  font-size: 1rem;
+  color: var(--grey);
+  text-transform: uppercase;
+  font-weight: 440;
+  text-align: center;
+}
+
+.navbar-links li a:hover {
+  color: var(--primaryred);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 2.4rem;
+  right: 1.2rem;
+  display: none;
+}
+
+.toggle-button svg {
+  width: 28px;
+}
+
+/* ------------Navbar Styles Ends------------ */
+
+/* ------------Scrollbar Styles------------ */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primaryred);
+  border-radius: 8px;
+}
+/* ------------Scrollbar Styles Ends------------ */
+
+/* ------------Advisory Styles------------ */
+
+main {
+  margin-top: 20px;
+}
+
+.advisory h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.advisory h2 {
+  font-size: 1.25rem;
+  margin-top: 6px;
+  text-align: center;
+  font-weight: 410;
+  padding: 20px 30px 0 30px;
+}
+
+.advisory-board {
+  margin-top: 26px;
+  display: flex;
+  padding: 0 1rem 0 1rem;
+}
+
+.box {
+  width: 32%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-image {
+  width: 100%;
+  text-align: center;
+}
+
+.box img {
+  width: 150px;
+  border-radius: 260px;
+  position: relative;
+  top: 20px;
+  box-shadow: 2px 3px 10px #888888;
+}
+
+.boundary {
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.boundary h2 {
+  margin-top: 6px;
+  font-family: 'OpenSans';
+  font-weight: 600;
+  color: var(--primaryred);
+}
+
+.boundary h3 {
+  margin-top: 3px;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.inner-boxes {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.inner-boxes p {
+  line-height: 2;
+}
+
+/* ------------Advisory Styles Ends------------ */
+
+/*------------Funding and Support Styles--------*/
+
+.funding {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding-bottom: 140px;
+}
+
+.funding h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.line {
+  background-color: #df0000;
+  height: 2.7px;
+  width: 40%;
+  display: block;
+}
+
+.images-container1,
+.images-container2 {
+  display: flex;
+  justify-content: center;
+}
+
+.images-container1 img {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.images-container2 img {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/*------------Funding and Support Styles Ends--------*/
+
+/* ------------Footer Styles------------ */
+footer {
+  background-color: white;
+  font-family: 'OpenSans';
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+
+footer h2 {
+  color: #e20000;
+  margin-bottom: 6px;
+}
+
+.footer-logo {
+  padding-right: 20px;
+}
+
+.contacts {
+  margin-right: 40px;
+}
+/* ------------Footer Styles Ends------------ */
+
+/* ------------Responsive------------ */
+/* if the width of the screen is less than 700px wide, run the code inside these query  */
+@media (max-width: 794px) {
+  /* ------------Navbar Styles------------ */
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .navbar-links li a {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* ------------Navbar Styles Ends------------ */
+
+  /* ------------Advisory Board------------ */
+  .advisory-board {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 85%;
+  }
+
+  .funding {
+    padding-bottom: 80px;
+  }
+
+  .line {
+    width: 90%;
+  }
+
+  .images-container1,
+  .images-container2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .images-container1 img,
+  .images-container2 img {
+    margin-top: 20px;
+  }
+
+  /* ------------Advisory Board Ends------------ */
+
+  /* ------------Footer Styles------------ */
+
+  .footer-logo {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .contacts {
+    margin-top: 30px;
+  }
+
+  .social_links {
+    margin-top: 30px;
+  }
+  /* ------------Footer Styles Ends------------ */
+}
