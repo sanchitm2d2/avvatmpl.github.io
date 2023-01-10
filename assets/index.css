@@ -23,140 +23,89 @@
   font-family: 'OpenSansExtraBold';
 }
 
+:root {
+  --primaryred: #e20000;
+  --secondaryred: #fb0000;
+  --grey: #0000009e;
+}
+
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
-  list-style: none;
   box-sizing: border-box;
   font-family: 'OpenSans', sans-serif;
   scroll-behavior: smooth;
 }
 
 .h_background {
-  background-image: url('../assets/images/background.png');
+  background-image: url('../assets/images/background_cropped.png');
   background-size: 100%;
   background-repeat: no-repeat;
   height: 100vh;
   background-position: 190%;
 }
 
-nav img {
-  margin-top: 10px;
-  margin-left: 70px;
+mark {
+  background: none;
+  color: var(--secondaryred);
 }
 
-nav {
-  /* position: fixed; */
-  height: 40px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
-nav ul {
-  float: right;
-  margin-right: 32%;
+.navbar img {
+  margin: 1rem 0 1.5rem 1.5rem;
 }
 
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 30px;
+.navbar-links {
+  margin-left: auto;
+  margin-right: auto;
+  width: 44%;
 }
 
-nav ul li a {
-  color: grey;
-  margin-left: 25px;
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  padding: 1rem;
+  display: block;
+  font-size: 1rem;
+  color: var(--grey);
   text-transform: uppercase;
-  font-size: 16px;
-}
-
-a.active,
-a:hover {
-  color: #e20000;
-  transition: 0.5s;
-}
-
-nav svg {
-  width: 40px;
-  float: right;
-  line-height: 80px;
-  cursor: pointer;
-  display: none;
-  margin-right: 2%;
-  transition: all 2s;
-}
-
-.section1 {
-  height: 100vh;
-}
-
-#standat,
-#ease {
-  font-family: 'OpenSansExtraBold', sans-serif;
-  font-weight: 800;
-  font-size: 80px;
-  display: inline-block;
-  position: relative;
-  top: 120px;
-  left: 60px;
-  transition: all 0.5s;
-}
-
-#ease {
-  color: #e20000;
-  margin-left: 18px;
-}
-
-#standatease {
-  display: none;
-}
-#standatease_para1 {
-  margin-top: 120px;
-  margin-left: 70px;
-  font-family: 'OpenSansLight', sans-serif;
-  font-weight: 300;
-  font-size: 22px;
-  padding-right: 30px;
-  letter-spacing: 7px;
-}
-
-.line1 {
-  background-color: #df0000;
-  height: 2.7px;
-  width: 30.6%;
-  margin-top: 30px;
-  margin-left: 140px;
-}
-
-#standatease_para {
-  font-family: 'OpenSansLight', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  margin-left: 70px;
-  margin-top: 30px;
+  font-weight: 440;
   text-align: center;
-  position: relative;
-  left: -410px;
 }
 
-button {
-  width: 200px;
-  height: 60px;
-  cursor: pointer;
-  background: rgba(226, 0, 0, 0.7);
-  border: 1px solid #b3b3b3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
-  font-family: 'OpenSans';
-  color: white;
-  font-size: 1.2rem;
-  margin-top: 28px;
-  margin-left: 60px;
+.navbar-links li a:hover,
+.navbar-links li a:active {
+  color: var(--primaryred);
+  font-weight: 450;
 }
 
-#temp {
-  margin-top: 400px;
+.toggle-button {
+  position: absolute;
+  top: 2.4rem;
+  right: 1.2rem;
+  display: none;
 }
+
+.toggle-button svg {
+  width: 28px;
+}
+/* ------------Navbar Styles Ends------------ */
+
 .container {
   width: 100%;
   height: 100%;
@@ -164,24 +113,13 @@ button {
   overflow-y: scroll;
 }
 
-.section1,
-.section2,
-.section3,
-.section4 {
+.standatease,
+.whystandatease,
+.problem-statement,
+.solution,
+.howstandat {
   scroll-snap-align: start;
-  font-family: 'OpenSans';
 }
-
-.section2 {
-  background: white;
-}
-
-.section3,
-.section4 {
-  background: black;
-}
-
-/* first attempt for scrollbar */
 
 body::-webkit-scrollbar {
   width: 0px;
@@ -198,250 +136,309 @@ main::-webkit-scrollbar-thumb {
   border-radius: 8px;
 }
 
-.section2,
-.section3,
-.section4 {
-  position: relative;
+.standatease {
+  padding: 120px;
   height: 100vh;
+  display: inline-block;
 }
 
+.standatease h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.makethechair {
+  letter-spacing: 7px;
+}
+
+.standatease-description {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding-right: 2.4rem;
+  font-weight: 400;
+}
+
+.main-line,
 .line {
   background-color: #df0000;
   height: 2.7px;
-  width: 50.6%;
+  display: block;
 }
 
-.section2 > h2,
-.section3 > h2,
-.section4 > h2 {
-  position: absolute;
-  top: 20px;
-  left: 72px;
-  font-size: 40px;
-}
-
-.section3 > h2,
-.section4 > h2 {
-  color: white;
-}
-
-iframe {
-  border-radius: 16px;
-  margin-top: 100px;
-}
-
-.section2 section img {
-  width: 320px;
-}
-
-.section2 > .line,
-.section3 > .line,
-.section4 > .line {
-  position: absolute;
-  top: 74px;
-}
-
-.inner-container {
-  display: flex;
-  position: absolute;
-  top: 80px;
-  align-items: center;
-  left: 300px;
-}
-
-.inner-container2 {
-  display: flex;
-  position: absolute;
-  top: 120px;
-  align-items: center;
-  left: 80px;
-}
-
-.inner-container3 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.inner-container3 ul {
-  line-height: 2;
-}
-
-.inner-container3 .image-section {
-  margin-top: 100px;
-}
-
-.inner-section-problem {
-  /* margin-top: 100px; */
-  line-height: 2.2;
-  margin-right: 40px;
-  text-align: right;
-}
-
-.inner-section-statement {
-  margin-top: 80px;
-  line-height: 3;
-  color: white;
-  margin-right: 80px;
-}
-
-.inner-section-goal {
-  margin-bottom: 200px;
-  line-height: 2.2;
-  margin-left: 30px;
-  position: relative;
-  top: -120px;
-}
-
-.section4 {
-  color: white;
-}
-
-.grid-container,
-.grid-container2 {
-  position: absolute;
-  top: 100px;
-  left: 0px;
-  display: grid;
-  background-color: aqua;
-  grid-template-columns: 720px 720px;
-}
-
-.grid-container2 {
-  top: 10px;
-}
-
-.grid-container img,
-.grid-container2 img {
-  margin-left: 250px;
-  margin-top: 50px;
-}
-
-.grid-item-1 {
-  background-color: white;
-  height: 320px;
-}
-
-.grid-item-2 h2 {
-  margin-top: 100px;
-  margin-left: 50px;
-}
-
-.grid-item-2 p {
+.main-line {
+  width: 54%;
   margin-top: 20px;
-  margin-left: 50px;
 }
 
-.grid-item-2 {
-  background-color: black;
-  height: 320px;
+.line {
+  width: 40%;
+  margin-top: 10px;
 }
 
-.grid-item-3 {
-  background-color: #c83e3e;
-  height: 320px;
-  text-align: center;
-}
-.grid-item-3 p {
-  margin-top: 150px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.grid-item-4 {
-  background-color: white;
-  height: 320px;
-}
-
-.grid-container2 > .grid-item-1,
-.grid-container2 > .grid-item-2,
-.grid-container2 > .grid-item-3,
-.grid-container2 > .grid-item-4 {
-  height: 260px;
-}
-
-.grid-container2 > .grid-item-2 > h2 {
-  margin-top: 80px;
-}
-
-.grid-container2 > .grid-item-3 > p {
-  margin-top: 120px;
+@keyframes pointingdown {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -20px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 
 #downArrow {
-  position: relative;
+  /* position: absolute;
+  margin-top: 94vh; */
   animation-name: pointingdown;
   animation-duration: 1.7s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-@keyframes pointingdown {
-  0% {
-    top: 0%;
-  }
-  50% {
-    top: -2%;
-  }
-  100% {
-    top: 0%;
-  }
+/* ------------whystandatease Styles------------ */
+
+.whystandatease,
+.problem-statement,
+.solution,
+.howstandat {
+  height: 100vh;
+  background-color: white;
 }
 
-@media (max-width: 908px) {
-  nav img {
-    position: static;
-    display: inline-block;
-    width: 100px;
-    margin-left: 38%;
-    transition: all 2s;
-  }
+.problem-statement {
+  color: white;
+  background-color: black;
+}
 
-  nav svg {
-    display: block;
-    margin-top: 22px;
-  }
+.whystandatease h2,
+.problem-statement h2,
+.solution h2,
+.howstandat h2 {
+  font-size: 2.2rem;
+  padding: 20px;
+  padding-bottom: 0px;
+}
 
-  ul {
-    position: fixed;
-    width: 100%;
+.whystandatease .first-para {
+  margin-top: 20px;
+}
+
+.whystandatease p,
+.ps-content p {
+  font-size: 1.1rem;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 10px;
+  font-weight: 430;
+}
+
+.goals-problems-subsection {
+  display: flex;
+  flex-direction: column;
+}
+
+.goal-image-container,
+.problem-image-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.goal-image-container img,
+.problem-image-container img {
+  width: 54%;
+}
+
+.problem-image-container {
+  position: relative;
+  top: -9rem;
+  left: -0.4rem;
+}
+
+.goals,
+.problems {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ------------whystandatease Styles ends------------ */
+
+/* ------------problemstatement Styles------------ */
+
+.ps-content {
+  display: flex;
+  margin-top: 50px;
+}
+
+.ps-content .content {
+  padding: 100px;
+  line-height: 1.8;
+}
+
+.ps-content .content p {
+  margin-bottom: 20px;
+}
+
+.emph {
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 460;
+}
+
+.secondary-line {
+  background-color: #df0000;
+  height: 2px;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ps-content iframe {
+  width: 640px;
+  height: 400px;
+  border-radius: 16px;
+}
+
+/* ------------problemstatement Styles ends------------ */
+
+.solution-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.solution iframe {
+  width: 700px;
+  height: 400px;
+  margin-right: 100px;
+  border-radius: 16px 16px 16px 16px;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.solution .content {
+  line-height: 1.7;
+}
+
+.solution .content p {
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+
+/* if the width of the screen is less than 700px wide, run the code inside these query  */
+@media (max-width: 700px) {
+  .h_background {
+    background-image: url('../assets/images/background_cropped_phone.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
     height: 100vh;
-    text-align: center;
-    top: 80px;
-    left: -100%;
-    transition: all 0.5s;
   }
 
-  nav ul li {
-    display: block;
+  .standatease {
+    padding: 40px;
   }
 
-  #standat,
-  #ease {
-    margin-left: 0px;
-    top: 50px;
-    font-size: 48px;
-  }
-  #ease {
-    margin-left: 9px;
+  .standatease h1 {
+    font-size: 3rem;
   }
 
-  #standatease_para {
-    margin-top: 60px;
-    margin-left: 62px;
-    font-size: 14px;
-    text-align: center;
+  .main-line {
+    width: 94%;
+    margin-top: 20px;
   }
 
-  #para_break1 {
+  .line {
+    width: 70%;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
     display: none;
+    background-color: #333;
+    width: 100%;
   }
 
-  button {
-    width: 70px;
-    height: 24px;
-    margin-top: 14px;
+  .navbar-links li a {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whystandatease h2,
+  .problem-statement h2,
+  .solution h2,
+  .howstandat h2 {
+    font-size: 1.8rem;
+  }
+
+  .whystandatease p {
+    font-size: 0.9rem;
+  }
+
+  .goal-image-container img,
+  .problem-image-container img {
+    width: 46%;
+  }
+
+  .problem-image-container {
+    top: -8rem;
+    left: -0.4rem;
+  }
+
+  .ps-content .video-container {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+  }
+
+  .ps-content iframe {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .ps-content {
+    flex-direction: column-reverse;
+  }
+
+  .ps-content .content {
+    padding: 0px;
+  }
+
+  .ps-content .content p {
     font-size: 0.7rem;
+  }
+
+  .solution-content {
+    flex-direction: column;
+  }
+
+  .solution-content iframe {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .solution .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
