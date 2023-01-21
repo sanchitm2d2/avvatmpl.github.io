@@ -113,6 +113,15 @@ mark {
   overflow-y: scroll;
 }
 
+.main_heading {
+  display: flex;
+  align-items: center;
+}
+
+.main_heading img {
+  width: 12%;
+}
+
 .standatease,
 .whystandatease,
 .problem-statement,
@@ -199,6 +208,29 @@ main::-webkit-scrollbar-thumb {
   animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+footer {
+  background-color: black;
+  color: white;
+  font-family: 'OpenSans';
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+
+footer h2 {
+  color: #e20000;
+  margin-bottom: 6px;
+}
+
+.footer-logo {
+  padding-right: 20px;
+}
+
+.contacts {
+  margin-right: 40px;
+}
+
 /* ------------whystandatease Styles------------ */
 
 .whystandatease,
@@ -227,6 +259,12 @@ main::-webkit-scrollbar-thumb {
   margin-top: 20px;
 }
 
+.first-para {
+  width: 380px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
 .whystandatease p,
 .ps-content p {
   font-size: 1.1rem;
@@ -239,23 +277,17 @@ main::-webkit-scrollbar-thumb {
 .goals-problems-subsection {
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: -30%;
 }
 
-.goal-image-container,
-.problem-image-container {
+.goal-image-container {
   margin-top: 20px;
   text-align: center;
 }
 
-.goal-image-container img,
-.problem-image-container img {
-  width: 54%;
-}
-
-.problem-image-container {
-  position: relative;
-  top: -9rem;
-  left: -0.4rem;
+.goal-image-container img {
+  width: 70%;
 }
 
 .goals,
@@ -263,6 +295,29 @@ main::-webkit-scrollbar-thumb {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+}
+
+.goals-headings,
+.problems-headings {
+  font-size: 1.6rem;
+}
+
+.problems-headings {
+  text-align: right;
+  margin-top: 20%;
+}
+
+.problems-headings h3 {
+  margin-bottom: 12%;
+}
+
+.goals-headings {
+  margin-bottom: 12%;
+}
+
+.goals-headings h3 {
+  margin-bottom: 12%;
 }
 
 /* ------------whystandatease Styles ends------------ */
@@ -332,6 +387,59 @@ main::-webkit-scrollbar-thumb {
   margin-top: 18px;
 }
 
+.grid-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid-item-1 {
+  background-color: white;
+  text-align: center;
+}
+
+.grid-item-1 img {
+  width: 36%;
+}
+
+.grid-item-2,
+.grid-item-3 {
+  background-color: black;
+  color: white;
+}
+
+.grid-item-2 p {
+  margin-top: 20px;
+  width: 30%;
+  text-align: justify;
+  margin-right: auto;
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+
+.grid-item-3 {
+  background-color: #c83e3e;
+  text-align: center;
+}
+
+.grid-item-3 p {
+  width: 20%;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: 40px;
+  margin-top: 20px;
+  letter-spacing: 0.7px;
+}
+
+.grid-item-4 {
+  background-color: white;
+  text-align: center;
+}
+
+.grid-item-4 img {
+  width: 36%;
+}
+
 /* if the width of the screen is less than 700px wide, run the code inside these query  */
 @media (max-width: 700px) {
   .h_background {
@@ -394,14 +502,17 @@ main::-webkit-scrollbar-thumb {
     font-size: 0.9rem;
   }
 
-  .goal-image-container img,
-  .problem-image-container img {
-    width: 46%;
+  .goal-image-container img {
+    width: 60%;
   }
 
-  .problem-image-container {
-    top: -8rem;
-    left: -0.4rem;
+  .goals-problems-subsection {
+    margin-top: 120px;
+  }
+
+  .goals-headings,
+  .problems-headings {
+    font-size: 0.7rem;
   }
 
   .ps-content .video-container {
@@ -440,5 +551,31 @@ main::-webkit-scrollbar-thumb {
   .solution .content {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .grid-item-2,
+  .grid-item-3 {
+    font-size: 0.7rem;
+  }
+
+  .grid-item-2 {
+    height: 50vh;
+  }
+
+  .grid-item-2 p,
+  .grid-item-3 p {
+    width: 40%;
+  }
+  .footer-logo {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .contacts {
+    margin-top: 30px;
   }
 }
