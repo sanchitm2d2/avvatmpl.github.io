@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Translead Medtech Pvt. Ltd.</title>
+    <title>Home | Translead Medtech Pvt. Ltd.</title> <!-- The title is displayed on the top of the browser window and as the tab name -->
     <link rel="stylesheet" href="./assets/index.css" />
     <script src="./src/script.js" defer></script>
+    <!-- Here we have used the link and script tag to link the stylesheet (.css) and javascript file -->
     <link
       rel="shortcut icon"
       href="./assets/images/translead_logo.png"
       type="image/x-icon"
     />
+    <!-- Here we have used the link tag with the attribute for shortcut icon for displaying the icon -->
   </head>
   <body class="h_background">
     <header>
       <nav class="navbar">
+        <!-- Navbar is the part of the UI which is displayed on the top giving user flexibility to navigate through the webpages -->
         <div>
           <img
             src="./assets/images/translead_logo_1.png"
@@ -23,6 +26,7 @@
           />
         </div>
         <a href="#" class="toggle-button">
+          <!-- The vector icon which is displayed only in mobile version, the visibility is controlled by media queries used in CSS Code -->
           <svg
             fill="#000000"
             version="1.1"
@@ -50,6 +54,7 @@
         </a>
         <div class="navbar-links">
           <ul>
+            <!-- The active class lets us highlight the current page which user is on. -->
             <li><a class="active" href="#">Home</a></li>
             <li><a href="./about.html">About</a></li>
             <li><a href="./contact.html">Contact Us</a></li>
@@ -57,9 +62,17 @@
         </div>
       </nav>
     </header>
+
+    <!-- The header section included the navbar, and this marks the end of the header section. -->
+    <!-- From this point onwards, we have the main section, 
+      usually where all the content of the webpage lies in, 
+      this section is again divided into multiple smaller 
+      modular sections which if ReactJS is used in future, 
+      would require let us reuse the code due to component architecture. The names of the section are self-explainatory 
+    -->
+
     <main class="container">
       <section class="standatease">
-        <!-- <h1>Stand at <mark>Eaze</mark></h1> -->
         <div class="main_heading">
           <img src="./assets/images/SAE_Chair_Logo.png" alt="" />
           <div>
@@ -83,20 +96,6 @@
           Stand at <mark>Eaze</mark> is a chair designed for the elderly to have
           a better stand to sit and sit to stand experience.
         </p>
-
-        <!-- <div style="text-align: center">
-          <svg
-            id="downArrow"
-            width="24"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-            fill="#e20000"
-          >
-            <path
-              d="M246.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 402.7 361.4 265.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 210.7 361.4 73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z"
-            />
-          </svg>
-        </div> -->
       </section>
 
       <section class="whystandatease">
@@ -250,6 +249,9 @@
       </section>
 
       <section class="howstandat">
+        <!-- Due to snap-wise scroll (implemented using CSS code), 
+          footer was sliding out of the last section, to fix it, 
+          here the footer is treated as a section itself. -->
         <footer>
           <div
             class="footer-logo"
